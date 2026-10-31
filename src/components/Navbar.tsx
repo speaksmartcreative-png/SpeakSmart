@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, ChevronDown, GraduationCap, Users, Sparkles, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Menu, X, ChevronDown, GraduationCap, Users, ArrowRight } from 'lucide-react';
 import { PageView } from '../types';
 
 interface NavbarProps {
@@ -30,44 +30,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md text-stone-900 border-b border-stone-200 shadow-md">
       
-      {/* Top Utility Announcement & Contact Bar */}
-      <div className="bg-stone-900 text-stone-200 text-[11px] sm:text-xs py-1.5 px-4 sm:px-6 lg:px-8 border-b border-stone-800/80">
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 text-[#3dabab] font-bold">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Spring 2027 Admissions Open</span>
-            </span>
-            <span className="text-stone-700 hidden sm:inline">•</span>
-            <span className="text-stone-400 hidden sm:inline">Strict 12-Student Studio Cap</span>
-            <span className="text-stone-700 hidden lg:inline">•</span>
-            <span className="text-stone-300 font-mono text-[10px] hidden lg:inline bg-stone-800 px-1.5 py-0.5 rounded border border-stone-700">
-              LLPIN: ACO-6485
-            </span>
-          </div>
-
-          <div className="flex items-center gap-4 text-stone-300">
-            <a
-              href="https://maps.app.goo.gl/Uxyx9HLjUbGjjZCSA?g_st=ac"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden md:inline-flex items-center gap-1 text-stone-300 hover:text-[#3dabab] transition-colors"
-              title="SpeakSmart Studio, Kolkata on Google Maps"
-            >
-              <MapPin className="w-3 h-3 text-[#3dabab]" />
-              <span>Shivam Chambers, Kolkata</span>
-            </a>
-            <span className="text-stone-700 hidden md:inline">|</span>
-            <a
-              href="tel:+919830064596"
-              className="inline-flex items-center gap-1.5 font-bold text-white hover:text-[#3dabab] transition-colors"
-            >
-              <Phone className="w-3 h-3 text-[#3dabab]" />
-              <span>+91 98300 64596</span>
-            </a>
-          </div>
-        </div>
-      </div>
+      {/* Signature Teal Letterhead Accent Strip */}
+      <div className="h-1 bg-gradient-to-r from-[#1f5e5e] via-[#3dabab] to-[#1f5e5e]" />
 
       {/* Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
@@ -85,8 +49,18 @@ export const Navbar: React.FC<NavbarProps> = ({
           />
           <div className="flex flex-col">
             <div className="flex items-baseline leading-none font-display">
-              <span className="font-script text-2xl sm:text-3xl lg:text-[32px] font-bold text-stone-950">Speak</span>
-              <span className="font-script text-2xl sm:text-3xl lg:text-[32px] font-bold text-[#3dabab]">Smart</span>
+              <span 
+                className="font-script text-2xl sm:text-3xl lg:text-[32px] font-bold text-stone-950"
+                style={{ fontFamily: "'Hand of Sean', 'Hand Of Sean', cursive" }}
+              >
+                Speak
+              </span>
+              <span 
+                className="font-script text-2xl sm:text-3xl lg:text-[32px] font-bold text-[#3dabab]"
+                style={{ fontFamily: "'Hand of Sean', 'Hand Of Sean', cursive" }}
+              >
+                Smart
+              </span>
             </div>
             <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-extrabold text-stone-700 mt-0.5 font-sans">
               Centre for Communication

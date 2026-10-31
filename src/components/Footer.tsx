@@ -132,10 +132,6 @@ export const Footer: React.FC<FooterProps> = () => {
                 </a>
               </div>
             </div>
-
-            <p className="text-xs text-stone-500 pt-2 leading-relaxed">
-              Studio sessions capped at 12 students for focused, individualized instruction.
-            </p>
           </div>
 
         </div>
